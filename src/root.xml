@@ -6,4 +6,7 @@
 	<!-- Root Context: defines shared resources visible to all other web components -->
 		
 	<bean id="book" class="com.test.Book"></bean>
+	<bean id="bookStore" class="com.test.BookStore">
+		<property name="book" ref="book"></property>
+	</bean>
 </beans>

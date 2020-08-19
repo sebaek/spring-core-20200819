@@ -9,9 +9,13 @@ public class AppMain {
 		= new ClassPathXmlApplicationContext("root.xml");
 		
 		Object o = context.getBean("book");
+		System.out.println(o);
 		
-		Book b = (Book) o;
-		System.out.println(b);
+		Object o1 = context.getBean("bookStore");
+		System.out.println(o1);
+		
+		BookStore bs = (BookStore) o1;
+		System.out.println(bs.getBook());
 	}
 }
 
