@@ -8,7 +8,8 @@ public class BookStore {
 	private Book book;
 	
 	@Autowired
-	public void setBook(Book book) {
+	public BookStore(Book book) {
+		super();
 		this.book = book;
 	}
 

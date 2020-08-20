@@ -9,4 +9,6 @@
 	<bean id="bookStore" class="com.test.BookStore">
 		<property name="book" ref="book"></property>
 	</bean>
+	
+	<bean id="dataSource" class="...MySql"></bean>
 </beans>
